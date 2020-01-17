@@ -1,5 +1,5 @@
 # 20MA573
-Computational Methods of Financial Mathematics
+## Computational Methods of Financial Mathematics
 
 By Jiamin JIAN
 
