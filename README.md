@@ -8,4 +8,4 @@ By Jiamin JIAN
 
 - [Prj02](https://github.com/JiaminJIAN/20MA573/blob/master/src/prj02.ipynb)
 
--[HW01](https://github.com/JiaminJIAN/20MA573/blob/master/src/HW1.ipynb)
+- [HW01](https://github.com/JiaminJIAN/20MA573/blob/master/src/HW1.ipynb)
