@@ -3,8 +3,8 @@
 
 By Jiamin JIAN
 
-### Homeworks:
+### 1.Homeworks:
 
 - [HW01](https://github.com/JiaminJIAN/20MA573/blob/master/src/HW1.ipynb)
 
-### Projects in the course:
+### 2.Projects in the course:
