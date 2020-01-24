@@ -10,3 +10,9 @@ By Jiamin JIAN
 - Escaping from a Gridworld: [HW01](https://github.com/JiaminJIAN/20MA573/blob/master/src/HW1.ipynb)
 
 ### 2.Projects in the course:
+***
+#### Course 1:
+
+#### Course 2:
+
+- Finite difference method: 
