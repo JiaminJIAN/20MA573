@@ -4,9 +4,7 @@
 By Jiamin JIAN
 
 ### 1.Homeworks:
-
-___
-
+***
 #### Homework 1:
 
 - Escaping from a Gridworld: [HW01](https://github.com/JiaminJIAN/20MA573/blob/master/src/HW1.ipynb)
