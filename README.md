@@ -15,4 +15,4 @@ By Jiamin JIAN
 
 #### Course 2:
 
-- Finite difference method: 
+- Finite difference method: [ipynb](https://github.com/JiaminJIAN/20MA573/blob/master/src/Finite_Difference_Method.ipynb)
