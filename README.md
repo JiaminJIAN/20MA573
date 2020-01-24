@@ -8,6 +8,7 @@ By Jiamin JIAN
 #### Homework 1:
 
 - Escaping from a Gridworld: [HW01](https://github.com/JiaminJIAN/20MA573/blob/master/src/HW1.ipynb)
+- Escaping from a Gridworld: [HW01(edition 2)](https://github.com/JiaminJIAN/20MA573/blob/master/src/HW1(Editon2).ipynb)
 
 ****
 
