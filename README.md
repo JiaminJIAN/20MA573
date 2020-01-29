@@ -25,6 +25,8 @@ By Jiamin JIAN
 
 - Python basics on Jupyter notebook:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Python_basics_on_Jupyter_notebook.ipynb)
 
+- A little example about Pandas dataframe:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/A_little_example_about_Pandas_dataframe.ipynb)
+
 #### Course 2:
 
 - Finite difference method: [\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Finite_Difference_Method.ipynb)
