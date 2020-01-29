@@ -1,4 +1,4 @@
-# 20MA573
+# 20MA573，WPI
 ## Computational Methods of Financial Mathematics
 
 By Jiamin JIAN, Worcester Polytechnic Institute 
