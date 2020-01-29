@@ -3,7 +3,7 @@
 
 By Jiamin JIAN, Worcester Polytechnic Institute 
 
-Teacher: Qingshuo Song
+Teacher: [Qingshuo Song](https://github.com/songqsh/20s_ma573)
 
 ### 1.Homeworks:
 
