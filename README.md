@@ -23,7 +23,7 @@ By Jiamin JIAN
 
 - Environment setup with github and Colab:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Environment_setup_github_and_Colab.ipynb)
 
-- Python basics on Jupyter notebook:[\[ipynb\]]()
+- Python basics on Jupyter notebook:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Python_basics_on_Jupyter_notebook.ipynb)
 
 #### Course 2:
 
