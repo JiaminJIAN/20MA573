@@ -21,6 +21,8 @@ By Jiamin JIAN
 
 #### Course 1:
 
+- Environment setup with github and Colab:[ipynb](https://github.com/JiaminJIAN/20MA573/blob/master/src/Environment_setup_github_and_Colab.ipynb)
+
 #### Course 2:
 
 - Finite difference method: [ipynb](https://github.com/JiaminJIAN/20MA573/blob/master/src/Finite_Difference_Method.ipynb)
