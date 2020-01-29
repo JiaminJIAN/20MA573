@@ -1,7 +1,8 @@
 # 20MA573
 ## Computational Methods of Financial Mathematics
 
-By Jiamin JIAN
+By Jiamin JIAN, Worcester Polytechnic Institute 
+Teacher: Qingshuo Song
 
 ### 1.Homeworks:
 
