@@ -22,18 +22,14 @@ Teacher: [Qingshuo Song](https://github.com/songqsh/20s_ma573)
 ### 2.Projects in the course:
 
 #### Course 1:
-
 - Environment setup with github and Colab:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Environment_setup_github_and_Colab.ipynb)
-
 - Python basics on Jupyter notebook:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Python_basics_on_Jupyter_notebook.ipynb)
-
 - A little example about Pandas dataframe:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/A_little_example_about_Pandas_dataframe.ipynb)
 
 #### Course 2:
-
 - Finite difference method: [\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Finite_Difference_Method.ipynb)
 
 #### Course 3:
-
 - Vanillaoption class:[\[ipynb \]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Vanilla%20options%20class.ipynb)
 - BS formula and Verga:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/BSM_formula.ipynb)
+- Implied volatility:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Implied_volatility.ipynb)
