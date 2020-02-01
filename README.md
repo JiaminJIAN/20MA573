@@ -3,7 +3,7 @@
 
 By Jiamin JIAN, Worcester Polytechnic Institute 
 
-Teacher: [Qingshuo Song](https://github.com/songqsh/20s_ma573)
+Teacher: [Professor Qingshuo Song](https://github.com/songqsh/20s_ma573)
 
 ### 1.Homeworks:
 
@@ -19,7 +19,7 @@ Teacher: [Qingshuo Song](https://github.com/songqsh/20s_ma573)
 
 ****
 
-### 2.Projects in the course:
+### 2.Projects and notes in the course:
 #### Course 1:
 - Environment setup with github and Colab:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Environment_setup_github_and_Colab.ipynb)
 - Python basics on Jupyter notebook:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Python_basics_on_Jupyter_notebook.ipynb)
