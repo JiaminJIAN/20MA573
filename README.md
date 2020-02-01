@@ -32,3 +32,7 @@ Teacher: [Qingshuo Song](https://github.com/songqsh/20s_ma573)
 #### Course 2:
 
 - Finite difference method: [\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Finite_Difference_Method.ipynb)
+
+#### Course 3:
+
+- Vanillaoption class:[\[ipynb \]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Vanilla%20options%20class.ipynb)
