@@ -36,3 +36,4 @@ Teacher: [Qingshuo Song](https://github.com/songqsh/20s_ma573)
 #### Course 3:
 
 - Vanillaoption class:[\[ipynb \]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Vanilla%20options%20class.ipynb)
+- BS formula and Verga:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/BSM_formula.ipynb)
