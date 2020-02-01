@@ -14,7 +14,7 @@ Teacher: [Qingshuo Song](https://github.com/songqsh/20s_ma573)
 - Second order finite difference:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/HW2(part_1).ipynb)
 - Increasing rate of finite difference:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/HW2(part_2).ipynb)
 #### Homework 3:
-- Payoff structure of option combinations:[\[ipynb\]]()
+- Payoff structure of option combinations:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Payoff_structure_of_option_combinations.ipynb)
 
 ****
 
