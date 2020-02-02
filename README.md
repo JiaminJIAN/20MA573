@@ -16,7 +16,7 @@ Teacher: [Professor Qingshuo Song](https://github.com/songqsh/20s_ma573)
 #### Homework 3:
 - Payoff structure of option combinations:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Payoff_structure_of_option_combinations.ipynb)
 - Bsm price change:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Bsm%20price%20change.ipynb)
-- Implied volatility:[\[ ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Implied%20volatility%20BSM.ipynb)
+- Implied volatility - BSM:[\[ ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Implied%20volatility%20BSM.ipynb)
 
 ****
 
