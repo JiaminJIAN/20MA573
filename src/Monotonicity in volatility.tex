@@ -1,0 +1,99 @@
+%GCE of WPI
+%by Jiamin JIAN
+
+\documentclass[12pt,a4paper]{ctexart}
+\usepackage{CJK}
+\usepackage{lipsum}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{amssymb}
+\usepackage{epsfig}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{amstext}
+\usepackage{blkarray}
+\usepackage{amsfonts}
+\usepackage{bbm}
+\usepackage{listings}
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+
+\begin{document}
+
+
+\begin{center}
+\textbf{Homework 4, MA573}
+\vspace{8pt}
+
+\textbf{Monotonicity in volatility}
+
+Jiamin JIAN
+\end{center}
+
+\vspace{12pt}
+
+$\textbf{Exercise1:}$
+
+Prove or disprove: Suppose $f$ is convex and $X$ is submartingale, prove that  $g(t) = \mathbb E[f(X_t)]$ is increasing.
+
+\vspace{8pt}
+$\textbf{Solution:}$
+
+This proposition is not right. We can give a counter example. Assume $f(x) = -x$, then $f(x)$ is a convex function since $\forall x_{1}, x_{2} \in \mathbb{R}$, and $\forall t \in [0, 1]$, we have $f(t x_{1} + (1-t)x_{2}) \leq t f(x_{1}) + (1-t)f(x_{2})$ holds. Then we can verify the proposotion that $g(t)$ is increasing. Since $\forall s \leq t$,
+\begin{equation*}
+\mathbb{E} [f(X_{t}) - f(X_{s}) | \mathcal{F}_{s}] = \mathbb{E}[-X_{t} + X_{s} | \mathcal{F}_{s}] = X_{s} - \mathbb{E}[X_{t} | \mathcal{F}_{s}].
+\end{equation*}
+Since $X_{t}$ is a submartigale with respect to the filtration $\{\mathcal{F}_{t}\}_{t \in \mathbb{T}}$, then we have
+\begin{equation*}
+\mathbb{E}[X_{t} | \mathcal{F}_{s}] \geq X_{s},
+\end{equation*}
+thus we know that $\forall s \leq t$, $\mathbb{E} [f(X_{t}) - f(X_{s}) | \mathcal{F}_{s}] \leq 0$. Then we take expectation on the both side and by the definition of conditional expectation, we have
+$$\mathbb{E} [f(X_{t}) - f(X_{s})] \leq 0.$$
+Then we know that $\forall s \leq t$, $g(t) \leq g(s)$, so that we have $g(t)$ is decreasing.
+
+If we know $f$ is a increasing function, then by the Jensen's inequality, we have for all $s \leq t$,
+$$\mathbb{E} [f(X_{t}) | \mathcal{F}_{s}] \geq f(\mathbb{E} [X_{t} | \mathcal{F}_{s}]),$$
+and since $X_{t}$ is a submartingale, we have $\mathbb{E} [X_{t} | \mathcal{F}_{s}] \geq X_{s}$. As $f$ is a increasing function, then
+$$\mathbb{E} [f(X_{t}) | \mathcal{F}_{s}] \geq f(\mathbb{E} [X_{t} | \mathcal{F}_{s}]) \geq f(X_{s}),$$
+by taking expectation on the both side, we have
+$$\mathbb{E} [f(X_{t})] \geq \mathbb{E} [f(X_{s})], \forall s \leq t.$$
+Then we know $g(t)$ is increasing.
+
+\vspace{8pt}
+
+$\textbf{Exercise2:}$
+
+Let $t \mapsto e^{-rt}S_t$ be a martingale, then prove that 
+$$C(t) = \mathbb E[e^{-rt}(S_t - K)^+]$$ 
+is increasing.
+
+\vspace{8pt}
+$\textbf{Solution:}$
+
+Since $e^{-rt} S_{t}$ is a martingale with respect to the filtration $\{\mathcal{F}_{t}\}_{t \in \mathbb{T}}$, and the function $f(x) = x^{+}$ is a convex function, then by the Jensen's inequality in the conditional expectation, we have $\forall s \leq t$,
+$$\mathbb{E} [e^{-rt}(S_{t} - K)^{+} | \mathcal{F}_{s}] \geq (\mathbb{E} [e^{-rt}(S_{t} - K) | \mathcal{F}_{s}])^{+} = (e^{-rs}S_{s} - e^{-rt} K)^{+},$$
+And we have 
+$$(e^{-rs}S_{s} - e^{-rt} K)^{+} = \big((e^{-rs}(S_{s} - K) + K (e^{-rs} - e^{-rt})\big)^{+} \geq (e^{-rs}(S_{s} - K))^{+}$$
+since $K (e^{-rs} -  e^{-rt}) \geq 0$, $\forall s \leq t$ and $K > 0$. Thus we know that $\mathbb{E} [e^{-rt}(S_{t} - K)^{+} | \mathcal{F}_{s}] \geq (e^{-rs}(S_{s} - K))^{+}$, then we take expectation on the both side, we have that
+$$\mathbb{E} [e^{-rt}(S_{t} - K)^{+}] \geq \mathbb{E} [(e^{-rs}(S_{s} - K))^{+}].$$
+So $\forall s \leq t$, we have $C(s) \leq C(t)$, then $C(t)$ is increasing.
+
+\vspace{8pt}
+
+$\textbf{Exercise3:}$
+
+Suppose $r = 0$ and $S$ is martingale, prove that $P(t) = \mathbb E [(S_t - K)^-]$ is increasing.
+
+\vspace{8pt}
+$\textbf{Solution:}$
+
+Since $ S_{t}$ is a martingale with respect to the filtration $\{\mathcal{F}_{t}\}_{t \in \mathbb{T}}$, and the function $f(x) = x^{-}$ is a convex function, we have $\forall s \leq t$,
+$$\mathbb{E} [(S_{t} - K)^{-} | \mathcal{F}_{s}] \geq (\mathbb{E} [S_{t} - K| \mathcal{F}_{s}])^{-} = (S_{s} - K)^{-},$$
+then we know that $(S_{t} - K)^{-}$ is a submartingale. Taking expectation on the both side, we have for all $s \leq t$,
+$$\mathbb{E} [(S_{t} - K)^{-} ] \geq \mathbb{E} [(S_{s} - K)^{-}].$$
+So, $P(t)$ is increasing.
+
+
+\end{document}
