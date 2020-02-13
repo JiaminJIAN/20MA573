@@ -34,3 +34,5 @@ Teacher: [Professor Qingshuo Song](https://github.com/songqsh/20s_ma573)
 - Vanillaoption class:[\[ipynb \]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Vanilla%20options%20class.ipynb)
 - BS formula and Verga:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/BSM_formula.ipynb)
 - Implied volatility:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Implied_volatility.ipynb)
+#### Course 4:
+- Volatility smile:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Volatility%20smile.ipynb)
