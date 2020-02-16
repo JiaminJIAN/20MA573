@@ -20,6 +20,8 @@ Teacher: [Professor Qingshuo Song](https://github.com/songqsh/20s_ma573)
 #### Homework 4:
 - Monotonicity in volatility:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Monotonicity%20in%20volatility.ipynb); [\[pdf\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Monotonicity%20in%20volatility.pdf)
 - BSM calibration:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/BSM%20calibration.ipynb)
+#### Homework 5:
+- Monte Carlo method to estimate $\pi$:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Monte_Carlo_method_to_estimate_pi.ipynb)
 
 ****
 
