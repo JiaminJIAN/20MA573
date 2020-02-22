@@ -24,7 +24,7 @@ Teacher: [Professor Qingshuo Song](https://github.com/songqsh/20s_ma573)
 - Monte Carlo method to estimate $\pi$:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Monte_Carlo_method_to_estimate_pi.ipynb)
 - Monte Carlo for integral:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Monte%20Carlo%20for%20integral.ipynb)
 #### Homework 6:
-- One_dimensional_Brownian_motion_path_simulation:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/One_dimensional_Brownian_motion_path_simulation2.ipynb)
+- One dimensional Brownian motion path simulation:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/One_dimensional_Brownian_motion_path_simulation2.ipynb)
 
 ****
 
