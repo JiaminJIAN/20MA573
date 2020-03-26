@@ -26,6 +26,8 @@ Teacher: [Professor Qingshuo Song](https://github.com/songqsh/20s_ma573)
 #### Homework 6:
 - One dimensional Brownian motion path simulation:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/One_dimensional_Brownian_motion_path_simulation2.ipynb)
 - SDE models:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/SDE_models.ipynb)
+#### Homework 7:
+- Euler method: [\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Euler_method.ipynb)
 
 ****
 
