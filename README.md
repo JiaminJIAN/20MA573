@@ -29,7 +29,7 @@ Teacher: [Professor Qingshuo Song](https://github.com/songqsh/20s_ma573)
 #### Homework 7:
 - Euler method: [\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Euler_method.ipynb)
 #### Homework 8:
-- Finite difference method on ODE: [\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Finite_difference_method_on_ODE.ipynb)
+- Finite difference method on ODE: [\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Finite_difference_method_on_ODE.ipynb); [\[PDF\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/HW8_Finite%20difference%20method%20on%20ODE.pdf)
 
 ****
 
