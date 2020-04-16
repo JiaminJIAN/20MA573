@@ -32,6 +32,9 @@ Teacher: [Professor Qingshuo Song](https://github.com/songqsh/20s_ma573)
 - Finite difference method on ODE: [\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Finite_difference_method_on_ODE.ipynb); [\[PDF\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/HW8_Finite%20difference%20method%20on%20ODE.pdf)
 #### Homework 9:
 - Value iteration on 2d BVP : [\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Value_iteration_on_2d_BVP.ipynb)
+#### Homework 10:
+- Stochastic approximation: [\[ipynb\]]()
+- Value iteration, MC and TD method on nd BVP: [\[ipynb\]]()
 
 ****
 
