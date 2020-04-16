@@ -34,7 +34,7 @@ Teacher: [Professor Qingshuo Song](https://github.com/songqsh/20s_ma573)
 - Value iteration on 2d BVP : [\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Value_iteration_on_2d_BVP.ipynb)
 #### Homework 10:
 - Stochastic approximation: [\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Stochastic_approximation.ipynb)
-- Value iteration, MC and TD method on nd BVP: [\[ipynb\]]()
+- Value iteration, MC and TD method on nd BVP: [\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/MC_and_TD_for_nd_BVP.ipynb)
 
 ****
 
