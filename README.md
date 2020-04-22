@@ -35,6 +35,8 @@ Teacher: [Professor Qingshuo Song](https://github.com/songqsh/20s_ma573)
 #### Homework 10:
 - Stochastic approximation: [\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Stochastic_approximation.ipynb)
 - Value iteration, MC and TD method on nd BVP: [\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/MC_and_TD_for_nd_BVP.ipynb)
+#### Homework 11:
+- Importance sampling on digital put: [\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Importance_sampling_on_digital_put.ipynb)
 
 ****
 
