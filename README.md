@@ -37,6 +37,8 @@ Teacher: [Professor Qingshuo Song](https://github.com/songqsh/20s_ma573)
 - Value iteration, MC and TD method on nd BVP: [\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/MC_and_TD_for_nd_BVP.ipynb)
 #### Homework 11:
 - Importance sampling on digital put: [\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Importance_sampling_on_digital_put.ipynb)
+#### Homework 12:
+- Upwind finite difference scheme: [\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Upwind_finite_difference_scheme.ipynb)
 
 ****
 
