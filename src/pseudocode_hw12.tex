@@ -1,0 +1,79 @@
+%Homework one, the course of Statistic Data Analysis by Professor Wang.
+%Jiamin JIAN
+
+\documentclass[12pt,a4paper]{ctexart}
+\usepackage{CJK}
+\usepackage{lipsum}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{epsfig}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{amstext}
+\usepackage{bbm}
+\usepackage{listings}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\lstset{language=R}
+\lstset{breaklines}
+\lstset{extendedchars=false}
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+
+\begin{document}
+
+
+\begin{center}
+\textbf{Upwind finite difference scheme}
+\vspace{8pt}
+
+MA573 homework 12
+\end{center}
+
+\vspace{12pt}
+(4) Write a pseudo code for value iteration.
+
+\begin{algorithm}[h]
+\caption{Value iteration to solve the BVP: VI$(\hat{\epsilon}, \hat{n})$}
+\begin{algorithmic}[1]
+\STATE Initialize $\hat{\epsilon}, \hat{n}$
+\STATE Initial guess: $\{v(x) : x \in O^{h}\}$
+\STATE $flag \gets 1, n \gets 0$
+\WHILE{$flag$}
+\STATE $\epsilon \gets 0$; $n \gets n+1$ \
+\FOR{$x \in O^{h}$}
+\STATE $u(x) \gets v(x)$ \
+\STATE $v(x) \gets F^{h}u(x)$ \
+\STATE $\epsilon \gets \max \{\epsilon | u(x) - v(x)| \}$ \
+\IF{$\epsilon < \hat{\epsilon}$}
+\STATE flag = 0
+\ENDIF
+\ENDFOR
+\ENDWHILE
+\RETURN $\{v(x): x \in O^{h}\}$
+\end{algorithmic}
+\end{algorithm}
+
+(5) Write a pseudo code for first visit Monte-Carlo method.
+
+\begin{algorithm}[h]
+\caption{First visit Monte-Carlo method: MC(n)}
+\begin{algorithmic}[1]
+\STATE Initialize $Tol = 0$
+\FOR{$x \in O^{h}$}
+\FOR{$i = 1, 2 , \dots, n$}
+\STATE Generate $w_{i} = \{S_{0} = x, R_{1}, S_{1}, \dots, R_{T}, S_{T}, R_{T+1}\}$ \
+\STATE Compute $G \gets \sum_{i = 1}^{T+1}  r^{i-1} R_{i}$ \
+\STATE $Tol \gets Tol + G$ \
+\ENDFOR
+\RETURN $v(x) \gets \frac{Tol}{n}$
+\ENDFOR
+\RETURN $\{v(x): x \in O^{h}\}$
+
+
+\end{algorithmic}
+\end{algorithm}
+
+\end{document}
