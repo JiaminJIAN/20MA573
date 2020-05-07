@@ -1,0 +1,192 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, amscd, amsthm, amsfonts,booktabs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\oddsidemargin 0pt
+\evensidemargin 0pt
+\marginparwidth 40pt
+\marginparsep 10pt
+\topmargin -20pt
+\headsep 10pt
+\textheight 8.7in
+\textwidth 6.2in
+\linespread{1.2}
+
+\title{Solving Elliptic HJB Equations in A Value Space}
+\author{Jiamin Jian \and Jungang Bu \and Yiyang Che}
+\date{}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\newcommand{\rr}{\mathbb{R}}
+
+\newcommand{\al}{\alpha}
+\DeclareMathOperator{\conv}{conv}
+\DeclareMathOperator{\aff}{aff}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+In this short report, we introduce the HJB equation and give a benchmark problem. To solve this problem, we will use the reinforcement approach such as value iteration. And we also want to apply the deep neural network to get the numerical solution of the HJB equation. What's more, we will consider what is the highest dimension we can solve.
+\end{abstract}
+
+
+\section{Introduction}\label{section-introduction}
+
+Stochastic control theory has a long history and it has been widely used in various fields. Generally we introduce the corresponding Hamilton-Jacobi-Bellman equations when we want to solve the stochastic control problem. As the regularity of the system is often not known a prior due to the control process, and since the solutions of the HJB equations are usually highly nonlinear, closed-form solution are rarely obtainable. Thus sometimes it is more convenient and efficient to consider the numerical solution of HJB equation. Numerical methods such as finite element method, finite difference method and spectral method are often used to get the numerical solution of partial differential equations.
+
+Nowadays, with the strengthening of computer computing ability and the continuous development of machine learning and especially deep learning, we have an effective tool to solve some problems. Artificial neural networks can sometimes get unexpected great results in solving high dimensional problems. And there are increasing interests of using the reinforcement learning and deep learning technologies to solve the PDE problems. In this project we want to apply the  reinforcement learning and deep learning approach based on the Markov chain approximation methods to solve a type a HJB equations. It involves two steps. Firstly, we approximate the solutions of the underlying stochastic control problems and recast them into discrete time Markov decision processes. Then, we solve the MDPs by using reinforcement learning and deep learning approaches.
+
+\subsection{Hamilton-Jacobi-Bellman Equation}
+
+In optimal control theory, the Hamilton–Jacobi–Bellman (HJB) equation gives a necessary and suﬃcient condition for optimality of a control with respect to a loss function. It is, in general, a nonlinear partial diﬀerential equation in the value function, which means its solution is the value function itself. Once the solution is known, it can be used to obtain the optimal control by taking the maximizer or minimizer of the Hamiltonian involved in the HJB equation.
+
+\subsection{Markov decision process}
+
+A Markov decision process (MDP) is a discrete time stochastic control process. It provides a mathematical framework for modeling decision making in situations where outcomes are partly random and partly under the control of a decision maker. MDPs are useful for studying optimization problems solved via dynamic programming and reinforcement learning.
+
+\subsection{Reinforcement learning}
+
+Reinforcement learning (RL) is an area of machine learning concerned with how software agents ought to take actions in an environment in order to maximize the notion of cumulative reward. Reinforcement learning is one of three basic machine learning paradigms, alongside supervised learning and unsupervised learning. The environment is typically stated in the form of a Markov decision process (MDP), because many reinforcement learning algorithms for this context utilize dynamic programming techniques. The main diﬀerence between the classical dynamic programming methods and reinforcement learning algorithms is that the latter do not assume knowledge of an exact mathematical model of the MDP and they target large MDPs where exact methods become infeasible.
+
+
+
+\section{Problem Setup}
+
+In this section we discuss the HJB equation associated to the control problem and give a benchmark problem for the demonstration of the computational method.
+
+\subsection{HJB equation}
+
+We consider an elliptic nonlinear HJB equation it the $d$-dimensional Euclidean space $\mathbb{R}^{d}$ and $\mathcal{O}$ is the domain,
+\begin{equation}
+    F(x, Du(x), D^{2} u(x)) = 0, \forall x \in \mathcal{O}
+\end{equation}
+with its boundary condition
+\begin{equation}
+    u(x) = g(x) , \forall x \in \mathcal{O}^{c},
+\end{equation}
+where $F: \mathbb{R}^{d} \times \mathbb{R}^{d} \times \mathbb{R}^{d \times d} \mapsto \mathbb{R}$ is a given continuous function of the type
+\begin{equation}
+    F(x, p, q) = \otimes_{a} \{b(x, a) \cdot p + \frac{1}{2} \textbf{tr}(q) + l(x, a) \}.
+\end{equation}
+In the above, the $\otimes$ is an operator which satisfies the following conditions:
+\begin{itemize}
+    \item $\otimes_{a} [c \phi_{1}(x, a) + \phi_{2}(x)] = c \otimes_{a} [\phi_{1} (x, a) ] + \phi_{2}(x)$
+    \item $\otimes_{a}^{x} \phi_{1}(x, a) \leq \otimes \phi_{2} (x, a)$, whenever $\phi_{1} \leq \phi_{2}$
+    \item $\otimes_{a} \phi_{1} (x, a) - \otimes_{a} \phi_{2} (x, a) \leq K \max_{a} | \phi_{1}(x, a) - \phi_{2}(x, a)|$,
+\end{itemize} 
+where $\phi_{1}, \phi_{2}$ are real valued functions and $c, K$ are constant. Many frequently used operators satisfy the aforementioned conditions. For instance, $\max_{a} \phi(x, a)$ and $\min_{a} \phi (x, a)$ are related to standard HJB equations and stochastic control problems.
+
+Let's consider a type of d-dimension HJB as follows:
+
+\begin{itemize}
+    \item Domain:
+    $$\mathcal{O} = \{x \in \mathbb{R}^{d} : 0 < x_{i} < 1, i = 1, 2 , \dots, d\}.$$
+    \item Equation on $\mathcal{O}$:
+    $$(\frac{1}{2} \Delta - \lambda)u(x) + \inf_{a} (\sum_{i=1}^d b_i(x,a)\frac{\partial u(x)}{\partial x_i} + \ell (x, a)) = 0. $$
+    \item Dirichlet data on the boundary $\partial \mathcal{O}$:
+    $$u(x) = g(x).$$
+\end{itemize}
+
+\subsection{Benchmark problem}
+
+To illustrate the effect of our numerical method, we consider a benchmark problem, on which we can compare the numerical solutions of differential equations with the exact ones. We consider the following $d$-dimensional HJB equation:
+\begin{itemize}
+    \item Domain:
+    $$\mathcal{O} = \{x \in \mathbb{R}^{d} : 0 < x_{i} < 1, i = 1, 2 , \dots, d\}.$$
+    \item Equation on $\mathcal{O}$:
+    $$\frac{1}{2} \Delta u + \inf_{|a| \leq 3} (a \cdot \nabla u + \ell (x, a)) = 0, $$
+    where $\ell (x, a) = d + 2 |x|^{2} + \frac{1}{2} |a|^{2}$.
+    \item Dirichlet data on the boundary $\partial \mathcal{O}$:
+    $$u(x) = - |x|^{2}.$$
+\end{itemize} 
+And we can get that the exact solution of the above problem is $u (x) = -|x|^{2}$ with $a = 2x$, and $F$ can be written as
+\begin{equation*}
+    F(x, p, q) = \inf_{|a| \leq 3} \Big{\{} \frac{1}{2} \textbf{tr} (q) + a \cdot p + \ell (x, a) \Big{\}}.
+\end{equation*}
+
+\subsubsection{Methods of Approximation}
+
+First, we will introduce some notions of finite difference operators. Commonly used first order finite difference operators are Forward Finite Difference (FFD), Backward Finite Difference (BFD), Central Finite Difference (CFD) and Upwind Finite Difference (UFD). Here, to approximate the solution to the HJB equation, we mainly use CFD and UFD operators.
+
+CFD is given below:
+$$\frac{\partial}{\partial x_i} u(x) \approx \delta_{\pm he_i}u(x) := \frac{1}{2}(\delta_{-he_i} + \delta_{he_i}) u(x) = \frac{u(x+he_i) - u(x-he_i)}{2h}.$$
+
+UFD is given below:
+$$ \frac{\partial}{\partial x_i} u(x) \approx \left\{
+\begin{aligned}
+\delta_{he_i} u(x) & = \frac{u(x+he_i) - u(x)}{h},    &   & {b(x) < 0} \\
+\delta_{-he_i} u(x) & = \frac{u(x) - u(x-he_i)}{h},   &   & {b(x) \ge 0}
+\end{aligned}
+\right.
+$$
+where $b(\cdot)$ is the coefficient function of $\frac{\partial}{\partial x_i} u(x)$.
+
+The Second order finite difference operators are the followings:
+$$\frac{\partial^2}{\partial x_i^2} u(x) \approx \delta_{-he_i}\delta_{he_i} u(x) = \frac{u(x+he_i) - 2u(x) + u(x-he_i)}{h^2}, $$
+and if $i \neq j$, we use
+$$
+\begin{aligned}
+    \frac{\partial^2}{\partial x_i \partial x_j} u(x) &\approx \delta_{\pm he_i}\delta_{\pm he_j} u(x) \\ 
+     &= \frac{u(x+he_i+he_j) - u(x+he_i-he_j) - u(x-he_i+he_j) + u(x-he_i-he_j)}{4h^2}. \\
+\end{aligned}
+$$
+
+\subsubsection{CFD on HJB}
+
+Now, implement CFD on HJB for approximation, we substitute 
+$$\frac{\partial}{\partial x_i} u(x) \leftarrow \delta_{\pm he_i}u(x)$$
+and 
+$$\frac{\partial^2}{\partial x_i^2} u(x) \leftarrow \delta_{-he_i}\delta_{he_i}u(x). $$
+
+Thus we can get the equations as follows,
+$$\frac{1}{2}\sum_{i=1}^d{\frac{v_i^+ -2v + v_i^-}{h^2}} - \lambda v + \inf_{a} \big{\{} \sum_{i=1}^d b_i(x,a) \frac{v_i^+ - v_i^-}{2h} + \ell(x,a) \big{\}} = 0, $$
+where, $v_i^+,\ v_i^-$ are the abbrevations of $v(x+he_i),\ v(x-he_i)$ respectively.
+
+Then by doing little calculation on this equation, we can get that 
+$$ v(x) \cdot \frac{d + h^2 \lambda}{d} = \frac{1}{d} \inf_{a} \big{\{} \sum_{i=1}^d { [v_i^+ (\frac{1}{2} + \frac{h b_i}{2}) + v_i^- (\frac{1}{2} - \frac{h b_i}{2})] } + \ell h^2 \big{\}} $$
+
+For simplicity, if we set
+$$\gamma = \frac{d}{d+h^2 \lambda},\ p^h(x \pm he_i|x,a) = \frac{1}{2d}(1 \pm h b_i(x,a)),\ \ell ^ h (x,a) = \frac{h^2 \ell (x,a)}{d}, $$
+then it yields Markov Decision Process (MDP)
+$$v(x) = \gamma \inf_{a} \Big{\{}\ell^h (x,a) + \sum_{i=1}^d \left[ p^h(x + he_i|x,a) v(x+he_i) + p^h(x - he_i|x,a) v(x-he_i) \right] \Big{\}}. $$
+
+In our benchmark problem, we have 
+$$\lambda = 0,\ \gamma = 1,\ b(x,a) = a,\ \ell (x,a) = d + 2 |x|^{2} + \frac{1}{2} |a|^{2}.$$
+
+\subsubsection{UFD on HJB}
+
+If choose to implement UFD on HJB, we replace $\frac{\partial}{\partial x_i} u(x)$ by the equation mentioned before and
+$$\frac{\partial^2}{\partial x_i^2} u(x) \leftarrow \delta_{-he_i}\delta_{he_i}u(x). $$
+
+Then we can get the equation
+$$\frac{1}{2}\sum_{i=1}^d{\frac{v_i^+ -2v + v_i^-}{h^2}} - \lambda v + \inf_{a} \big{\{} \sum_{i=1}^d { (b_i^+ \frac{v - v_i^-}{h} + b_i^- \frac{v_i^+ - v}{h}) } \ell(x,a) \big{\}} = 0, $$
+where $b_i^+,\ b_i^-$ mean the positive part and the negative one of $b(x,a)$ respectively.
+
+We can also rewrite the above equation as follows
+$$ \inf_{a} \Big{\{} \frac{d+h^2 \lambda - h \sum_{i=1}^d |b_i|}{h^2} \Big{\}} v(x) = \inf_{a} \Big{\{} \sum_{i=1}^d { (\frac{1 - 2h b_i^-}{2h^2} v_i^+ + \frac{1 - 2h b_i^+}{2h^2} v_i^-) } + \ell(x,a) \Big{\}}. $$
+
+In a similar way as before, for simplicity we set
+$$\gamma = \frac{c}{c + h^2 \lambda},\ p^h(x \pm he_i|x,a) = \frac{1}{2c}(1 - 2 h b_i^{\mp}(x,a)),\ \ell ^ h (x,a) = \frac{h^2 \ell (x,a)}{c}, $$
+where $c = d - h\sum_{i=1}^d |b_i|$, then it also yields MDP
+$$v(x) =  \inf_{a} \gamma \Big{\{}\ell^h (x,a) + \sum_{i=1}^d \left[ p^h(x + he_i|x,a) v(x+he_i) + p^h(x - he_i|x,a) v(x-he_i) \right] \Big{\}}. $$
+
+In our benchmark problem, we have 
+$$\lambda = 0,\ b(x,a) = a,\ \ell (x,a) = d + 2 |x|^{2} + \frac{1}{2} |a|^{2}.$$
+
+\section{Methodology}
+
+We want to solve the HJB equation by reinforcement learning and deep learning approach. The goals of our project are listed as follows:
+\begin{itemize}
+    \item Recover the value iteration on central finite difference method.
+    \item Do the value iteration on upwind finite difference scheme.
+    \item Consider what is the highest dimension we can compute.
+\end{itemize} 
+
+
+\end{document}
