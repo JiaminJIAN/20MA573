@@ -61,5 +61,22 @@ Teacher: [Professor Qingshuo Song](https://github.com/songqsh/20s_ma573)
 #### Course 4:
 - Volatility smile:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Volatility%20smile.ipynb)
 
-## Computational method
+## Programing and computing in Finance Engineering
+### Notes
+- Python basic and probability: [\ipynb\]]()
+- Binomial Option Pricing: [\ipynb\]]()
+- BSM option pricing model: [\ipynb\]]()
+- CRR option: [\ipynb\]]()
+- Method of Control variates: [\ipynb\]]()
+- Basic Monto Carlo: [\ipynb\]]()
+- Random Walk: [\ipynb\]]()
+- Euler Method: [\ipynb\]]()
+
+### Homeworks
+- Homework 1: [\ipynb\]]()
+- Homework 2: [\ipynb\]]()
+- Homework 3: [\ipynb\]]()
+- Homework 4: [\ipynb\]]()
+- Homework 5: [\ipynb\]]()
+- Midterm test: [\ipynb\]]()
 
