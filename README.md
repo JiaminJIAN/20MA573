@@ -60,3 +60,6 @@ Teacher: [Professor Qingshuo Song](https://github.com/songqsh/20s_ma573)
 - Implied volatility:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Implied_volatility.ipynb)
 #### Course 4:
 - Volatility smile:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Volatility%20smile.ipynb)
+
+## Computational method
+
