@@ -63,20 +63,20 @@ Teacher: [Professor Qingshuo Song](https://github.com/songqsh/20s_ma573)
 
 ## Programing and computing in Finance Engineering
 ### Notes
-- Python basic and probability: [\ipynb\]]()
-- Binomial Option Pricing: [\ipynb\]]()
-- BSM option pricing model: [\ipynb\]]()
+- Python basic and probability: [\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/MA6628_python%20basic%20and%20probability.ipynb)
+- Binomial Option Pricing: [\[ipynb\]]()
+- BSM option pricing model: [\[ipynb\]]()
 - CRR option: [\ipynb\]]()
-- Method of Control variates: [\ipynb\]]()
-- Basic Monto Carlo: [\ipynb\]]()
-- Random Walk: [\ipynb\]]()
-- Euler Method: [\ipynb\]]()
+- Method of Control variates: [\[ipynb\]]()
+- Basic Monto Carlo: [\[ipynb\]]()
+- Random Walk: [\[ipynb\]]()
+- Euler Method: [\[ipynb\]]()
 
 ### Homeworks
-- Homework 1: [\ipynb\]]()
-- Homework 2: [\ipynb\]]()
-- Homework 3: [\ipynb\]]()
-- Homework 4: [\ipynb\]]()
-- Homework 5: [\ipynb\]]()
-- Midterm test: [\ipynb\]]()
+- Homework 1: [\[ipynb\]]()
+- Homework 2: [\[ipynb\]]()
+- Homework 3: [\[ipynb\]]()
+- Homework 4: [\[ipynb\]]()
+- Homework 5: [\[ipynb\]]()
+- Midterm test: [\[ipynb\]]()
 
