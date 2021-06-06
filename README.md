@@ -1,5 +1,4 @@
-# 20MA573
-## Computational Methods of Financial Mathematics
+# Computational Methods of Financial Mathematics
 
 By Jiamin JIAN, Worcester Polytechnic Institute 
 
@@ -61,7 +60,7 @@ Teacher: [Professor Qingshuo Song](https://github.com/songqsh/20s_ma573)
 #### Course 4:
 - Volatility smile:[\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/Volatility%20smile.ipynb)
 
-## Programing and computing in Finance Engineering
+# Programing and computing in Finance Engineering
 ### Notes
 - Python basic and probability: [\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/MA6628_python%20basic%20and%20probability.ipynb)
 - Binomial Option Pricing: [\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/MA6628_Binomial%20Option%20Pricing.ipynb)
