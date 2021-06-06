@@ -76,6 +76,6 @@ Teacher: [Professor Qingshuo Song](https://github.com/songqsh/20s_ma573)
 - Homework 2: [\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/MA6628_JiaminJIAN_Prj02.ipynb)
 - Homework 3: [\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/MA6628_JiaminJIAN_Prj04.ipynb)
 - Homework 4: [\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/MA6628_JiaminJIAN_Prj05.ipynb)
-- Homework 5: [\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/MA6628_JiaminJIAN_Prj06.ipynb)
+- Homework 5: [\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/MA6628_JiaminJIAN_prj06.ipynb)
 - Midterm test: [\[ipynb\]](https://github.com/JiaminJIAN/20MA573/blob/master/src/MA6628_Midterm%20test%20solution.ipynb)
 
